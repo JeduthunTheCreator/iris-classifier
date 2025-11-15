@@ -10,3 +10,11 @@ cd iris-classifier
 python -m venv venv && source venv/bin/activate
 pip install -r requirements.txt
 python src/train.py
+```
+
+## Sample command to run Python Script in CLI
+```bash
+python src/train.py --test-size 0.2 --random-state 42 
+
+from more information on the feature importance run
+python src/train.py --test-size 0.2 --random-state 42 --verbose
