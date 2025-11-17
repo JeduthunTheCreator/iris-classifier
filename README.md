@@ -12,10 +12,10 @@ pip install -r requirements.txt
 python src/train.py
 ```
 
-## Sample code to run in Python CLI
+## Sample command to run Python Script in CLI
 ```bash
 python src/train.py --test-size 0.2 --random-state 42
 
-for more information on feature importance run
+for more information on the feature importance run
 python src/train.py --test-size 0.2 --random-state 42 --verbose
 ```
