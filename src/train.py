@@ -12,6 +12,11 @@ import joblib
 import os
 from datetime import datetime
 
+# The exploratory analysis was first carried out in a Jupyter Notebook, where the dataset was visualised, the features were inspected, and a baseline understanding of the Iris data was established.
+# The final implementation was then reproduced in this Python script following the same workflow, but with additional evaluation metrics and programmatic structure.
+# While the notebook focused more on interactive analysis, the Python script formalised the machine learning pipeline by including accuracy, precision, recall, F1-score, and a confusion matrix.
+# Feature importance was also calculated to provide insight into which attributes contributed most to the classifier’s decisions.
+
 
 def load_iris_data():
     """ Load and return the iris dataset """
@@ -55,6 +60,8 @@ def train_model(X, y, test_size=0.2, random_state=42):
     return model, X_test, y_test, y_pred
 
 
+# In the notebook I made use of 2 evaluation metrics(Accuracy and Confusion matrix)
+# In the code I made use of 5 evaluation metrics(Accuracy, Confusion matrix, Precision, Recall and F1-score)
 def evaluate_model(y_test, y_pred, target_names):
     """ Evaluate and print model performance"""
     accuracy = accuracy_score(y_test, y_pred)
